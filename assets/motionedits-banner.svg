@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 300" width="960" height="300" role="img" aria-labelledby="title description">
+  <title id="title">MotionEdits Max</title>
+  <desc id="description">Open-source tools for screen time and video privacy. An animated scan line passes over a stylized video timeline.</desc>
+  <defs>
+    <linearGradient id="background" x2="1" y2="1" gradientUnits="objectBoundingBox">
+      <stop stop-color="#091F24"/>
+      <stop offset="1" stop-color="#101226"/>
+    </linearGradient>
+    <radialGradient id="glow">
+      <stop stop-color="#2B7973" stop-opacity=".50"/>
+      <stop offset="1" stop-color="#2B7973" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="accent">
+      <stop stop-color="#A8F6CD"/>
+      <stop offset="1" stop-color="#89CBFF"/>
+    </linearGradient>
+    <pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M24 0H0V24" fill="none" stroke="#8EDFD1" stroke-opacity=".13"/>
+    </pattern>
+    <clipPath id="panel">
+      <rect x="548" y="49" width="358" height="201" rx="17"/>
+    </clipPath>
+  </defs>
+  <style>
+    .scan { animation: sweep 4.8s ease-in-out infinite alternate; }
+    .pulse { animation: pulse 3s ease-in-out infinite; }
+    @keyframes sweep {
+      from { transform: translateX(0); }
+      to { transform: translateX(209px); }
+    }
+    @keyframes pulse {
+      0%, 100% { opacity: .38; }
+      50% { opacity: 1; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .scan, .pulse { animation: none; }
+    }
+  </style>
+  <rect x="1" y="1" width="958" height="298" rx="25" fill="url(#background)" stroke="#365451" stroke-width="2"/>
+  <ellipse cx="723" cy="148" rx="229" ry="145" fill="url(#glow)"/>
+
+  <g font-family="system-ui, sans-serif">
+    <path d="M52 61h26m-26 8h17m-17 8h9" stroke="url(#accent)" stroke-width="3" stroke-linecap="round"/>
+    <text x="90" y="75" fill="#A8F6CD" font-size="15" font-weight="700" letter-spacing="2">OPEN SOURCE</text>
+    <text x="48" y="148" fill="#F5F9F8" font-size="62" font-weight="800" letter-spacing="-2.5">MotionEdits Max</text>
+    <text x="52" y="195" fill="#CADCD9" font-size="25">Tools for screen time</text>
+    <text x="52" y="226" fill="#CADCD9" font-size="25">and video privacy.</text>
+  </g>
+
+  <g clip-path="url(#panel)">
+    <rect x="548" y="49" width="358" height="201" fill="#0A171D"/>
+    <rect x="548" y="49" width="358" height="201" fill="url(#grid)"/>
+    <path d="M571 86H882M571 211H882" stroke="#577875" stroke-opacity=".53"/>
+    <circle cx="575" cy="69" r="3" fill="#A8F6CD"/>
+    <circle cx="586" cy="69" r="3" fill="#57928E"/>
+    <circle cx="597" cy="69" r="3" fill="#365451"/>
+
+    <rect x="579" y="102" width="294" height="90" rx="8" fill="#10282D" stroke="#416D70"/>
+    <path d="M593 170l25-22 19 12 28-35 23 20 21-8 23 16 27-35 27 20 17-8 25 35 24-19" fill="none" stroke="url(#accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M588 124v-13h15m246 0h15v13m0 45v13h-15m-246 0h-15v-13" fill="none" stroke="#A8F6CD" stroke-width="1.5" stroke-opacity=".75"/>
+    <g class="scan">
+      <rect x="617" y="98" width="35" height="99" fill="#A8F6CD" opacity=".12"/>
+      <path d="M652 98v99" stroke="#A8F6CD" stroke-width="2"/>
+      <path d="M652 218l-5 7h10z" fill="#A8F6CD"/>
+    </g>
+
+    <rect x="579" y="226" width="67" height="7" rx="3.5" fill="#375450"/>
+    <rect x="651" y="226" width="72" height="7" rx="3.5" fill="#548881"/>
+    <rect x="728" y="226" width="90" height="7" rx="3.5" fill="#375450"/>
+    <rect x="823" y="226" width="50" height="7" rx="3.5" fill="#6979A1"/>
+    <circle class="pulse" cx="879" cy="69" r="4" fill="#A8F6CD"/>
+  </g>
+  <rect x="548.5" y="49.5" width="357" height="200" rx="17" fill="none" stroke="#548881"/>
+</svg>
