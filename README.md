@@ -1,16 +1,19 @@
-# MotionEdits Max
+<p align="center">
+  <img src="./assets/motionedits-banner.svg" alt="MotionEdits Max. Open-source tools for screen time and video privacy." width="960">
+</p>
 
-I build open-source tools for two things I run into all the time: losing track of where my screen time goes and making sure a recording is safe to share.
+I build apps that help you see where your screen time goes and catch private information in recordings before you share them. Both projects process your data locally.
 
 ## Projects
 
-| Project | What it does | Where to start |
-| --- | --- | --- |
-| **FrameGuard** | Scans MP4 screen recordings on your device for exposed API keys, email addresses, and custom phrases. Jump to flagged timestamps and review them before sharing. | [Source](https://github.com/motionedits246-max/FrameGuard) · [Download](https://github.com/motionedits246-max/FrameGuard/releases/latest) |
-| **Digital Discipline** | A local-first Windows app for seeing where your screen time goes, spotting browsing habits, and setting focus sessions and browsing limits. | [Source](https://github.com/motionedits246-max/digital-discipline) · [Releases](https://github.com/motionedits246-max/digital-discipline/releases) |
+### [FrameGuard](https://github.com/motionedits246-max/FrameGuard)
 
-## Feedback
+**Review screen recordings before you hit publish.** FrameGuard uses on-device OCR to scan MP4 recordings for exposed API keys, email addresses, and your own keywords. Jump to flagged timestamps in the desktop app or run scans from the terminal.
 
-If you try either app and run into a bug, open an issue with your OS, app version, and the steps to reproduce it. Feature ideas are welcome too.
+[**Download FrameGuard**](https://github.com/motionedits246-max/FrameGuard/releases/latest) · [Source code](https://github.com/motionedits246-max/FrameGuard) · [Report an issue](https://github.com/motionedits246-max/FrameGuard/issues)
 
-[FrameGuard issues](https://github.com/motionedits246-max/FrameGuard/issues) · [Digital Discipline issues](https://github.com/motionedits246-max/digital-discipline/issues)
+### [Digital Discipline](https://github.com/motionedits246-max/digital-discipline)
+
+**See where your screen time goes.** Review app usage and browsing habits, set up focus sessions and site limits, and keep an eye on your day from a floating panel. Built for Windows with an optional browser companion.
+
+[**Find a release**](https://github.com/motionedits246-max/digital-discipline/releases) · [Source code](https://github.com/motionedits246-max/digital-discipline) · [Report an issue](https://github.com/motionedits246-max/digital-discipline/issues)
